@@ -1,0 +1,76 @@
+questInfo:
+ - name: Name
+   startingLevel: 0
+   starter: 'Name'
+   xp: 0
+   questStages:
+            - '/' #Stage 1
+            - '/' #Stage 2
+            - '/' #Stage 3
+            - 'Don^t hesitate to add more stages' #Stage 4
+   successMessages:
+            - '&6[Quest Completed: Name]'
+            - '&7[+0 Experience Points]'
+
+   
+npcs:
+ - name: Name
+   quest: Name
+   coords: 0,0,0
+   occupation: Occupation (blacksmith, farmer, etc)
+   baby: false
+
+   ## Messages ##
+   fallBackMessage: 'NameFallback'
+   repeatMessage: 'NameRepeat'
+   greetMessage: 'NameGreet'
+   nearbyMessage: 'null'
+   lowStageMessage: 'NameLowStage'
+   lowLevelMessage: 'NameLevel'
+
+
+   stages:
+            1: NameStage1
+            2: NameStage2
+   requirements:
+            1: 0,0,0
+   rewards:
+            1: 0,0,0
+
+messages:
+
+ - title: NameStage1
+   strings:
+        - '&2Name: &a/'
+        - '&2Name: &a/'
+        - '&7[New Quest Started: Name]'
+   delay: 5
+
+ - title: NameRepeat
+   strings:
+        - '&2Name: &a/'
+   delay: 5
+
+ - title: NameGreet
+   strings:
+        - '&2Name: &a/'
+   delay: 5
+
+ - title: NameLevel
+   strings:
+        - '&2Name: &a/'
+   delay: 5
+
+
+regions:
+
+ - name: Name
+   loc1: 0,0,0
+   loc2: 0,0,0
+   quest: Name
+   message: '&2Name: &a/'
+   stageRequiredEntry: 0
+   itemsRequiredEntry: null
+   tp: null
+   escalateStage: false
+   stageSetMessage: '/'
